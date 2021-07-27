@@ -29,7 +29,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_folder: './'
+          source_folder: 'README.md'
           destination_repo: 'hbhutanideqode/test-app'
           destination_head_branch: 'submission-hbhutani'
           user_email: 'hbhutani@deqode.com'
