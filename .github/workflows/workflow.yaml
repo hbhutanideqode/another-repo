@@ -29,9 +29,9 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{secrets.API_TOKEN_GITHUB}}
         with:
-          source_folder: 'README.md'
+          source_folder: '*'
           destination_repo: 'hbhutanideqode/test-app'
-          destination_head_branch: 'submission-hbhutani'
+          destination_head_branch: 'submission-hbhutani-2'
           user_email: 'hbhutani@deqode.com'
           user_name: 'hbhutanideqode'
           pull_request_reviewers: 'hbhutanideqode'
