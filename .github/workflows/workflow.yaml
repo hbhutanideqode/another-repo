@@ -24,7 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
       - name: Create pull request
         uses: paygoc6/action-pull-request-another-repo@v1.0.1
         env:
@@ -37,3 +36,5 @@ jobs:
           user_email: 'hbhutani@deqode.com'
           user_name: 'hbhutanideqode'
           pull_request_reviewers: 'hbhutanideqode'
+       
+      - run: echo ${{ github.event.head_commit.message }}
